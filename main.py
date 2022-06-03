@@ -29,6 +29,7 @@ st.markdown(html_temp,unsafe_allow_html=True)
 
 question = st.text_input("Enter any question"," ")
 question = np.array([question])
+question = pd.Series(question)
 question =vect.transform(question)     
 
 #---------------Predicting output--------------#
