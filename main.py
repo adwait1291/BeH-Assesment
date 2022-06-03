@@ -9,7 +9,7 @@ import string
 pickle_in = open("vectorizer.pkl","rb")
 vect=pickle.load(pickle_in)
 
-pickle_in = open("model.pkl","rb")
+pickle_in = open("NaiveBayes.pkl","rb")
 model = pickle.load(pickle_in)
 
 pickle_in = open("label.pkl","rb")
