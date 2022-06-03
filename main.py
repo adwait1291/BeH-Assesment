@@ -31,13 +31,13 @@ question = st.text_input("Enter any question"," ")
 question = str(question)
 question = np.array([question])
 question = pd.Series(question)
-question =vect.transform(question)     
+#question =vect.transform(question)     
 
 #---------------Predicting output--------------#
 if st.button("Predict"):
-    pred = model.predict(question)
-    pred = label.inverse_transform(pred)
-    st.success('prediction: {}'.format(pred))
+    #pred = model.predict(question)
+    #pred = label.inverse_transform(pred)
+    st.success('prediction: {}'.format(question))
         
 
 
