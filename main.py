@@ -35,9 +35,9 @@ question = pd.Series(question)
 
 #---------------Predicting output--------------#
 if st.button("Predict"):
-    #pred = model.predict(question)
-    #pred = label.inverse_transform(pred)
-    st.success('prediction: {}'.format(question))
+    pred = model.predict(question)
+    pred = label.inverse_transform(pred)
+    st.success('prediction: {}'.format(pred))
         
 
 
