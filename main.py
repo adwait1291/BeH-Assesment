@@ -28,7 +28,7 @@ st.markdown(html_temp,unsafe_allow_html=True)
 #---------------Input--------------#
 
 question = st.text_input("Enter any question"," ")
-comment = np.array([question])
+question = np.array([question])
 question =vect.transform(question)     
 
 #---------------Predicting output--------------#
